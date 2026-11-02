@@ -1,0 +1,72 @@
+/* 기본 설정 */
+:root{--paper:#f8f3ee;--ink:#4d443e;--muted:#94877d;--line:#d9cec4;--peach:#e9b4a3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#eee7df;color:var(--ink);font-family:"Gowun Batang",serif}
+button,a{font:inherit}
+a{color:inherit;text-decoration:none}
+.invitation{width:min(100%,560px);margin:0 auto;background:var(--paper);overflow:hidden;box-shadow:0 0 35px #55483b12}
+section{position:relative}
+.hero{padding:24px 22px 0;background:linear-gradient(180deg,#f8f2ed 0%,#f4e7df 62%,#eee3d9 100%);text-align:center}
+.top-nav{display:flex;justify-content:center;gap:clamp(13px,4vw,27px);font:10px Manrope,sans-serif;letter-spacing:1.4px;color:#81766d}
+.hero-copy{padding:82px 0 24px}
+.eyebrow{font:10px Manrope,sans-serif;letter-spacing:2.5px;color:#a09387;margin:0 0 16px}
+h1{font-size:clamp(25px,7vw,34px);font-weight:400;letter-spacing:5px;margin:0 0 22px}
+h1 span{font-size:19px;color:var(--peach);vertical-align:middle;margin:0 7px}
+.hero-copy>p:not(.eyebrow):not(.date),.body-copy{font-size:13px;line-height:2;color:#8c8077}
+.date{font-size:15px;letter-spacing:3px;margin:22px 0 0}
+.date span{display:block;font:9px Manrope,sans-serif;letter-spacing:1.5px;color:#a99c92;margin-top:8px}
+.hero-photo{width:100%;height:360px;object-fit:cover;object-position:center 55%;display:block;border-radius:3px 3px 0 0}
+.hero-bottom{font:9px Manrope,sans-serif;letter-spacing:2.2px;padding:18px 0 23px;color:#a09489}
+.section{text-align:center;padding:76px 28px}
+.story{background:#fbf7f2}
+h2{font-size:25px;font-weight:400;line-height:1.55;letter-spacing:1px;margin:0 0 18px}
+.story .body-copy{margin:0}
+.flower{width:100px;height:125px;object-fit:contain;position:absolute;right:10px;top:190px;opacity:.65}
+.thin-line{height:1px;width:38px;background:var(--line);margin:55px auto}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:30px}
+.story-grid figure{margin:0}
+.story-grid img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.story-grid figcaption{font-size:11px;color:#8f8278;padding-top:10px}
+.small-note{font-size:12px;line-height:1.9;color:#988b80;margin:28px 0 0}
+.gallery{background:#f6f0ea;padding-top:72px}
+.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:28px}
+.gallery-item{border:0;padding:0;background:none;cursor:zoom-in;overflow:hidden}
+.gallery-item.wide{grid-column:1/-1}
+.gallery-item img{display:block;width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .35s}
+.gallery-item.wide img{aspect-ratio:1.48/1}
+.gallery-item:active img{transform:scale(.98)}
+.tap-hint{font-size:10px;color:#a99c92;margin:15px 0 38px}
+blockquote{font-size:16px;line-height:2.1;color:#8a7d73;margin:0;padding:0}
+.details{background:#fbf7f2;padding-top:75px}
+.detail-card{text-align:left;margin:32px auto 24px;max-width:360px}
+.detail-row{display:flex;gap:18px;padding:14px 0}
+.detail-icon{font-size:23px;color:#8d8177;width:25px;text-align:center}
+.detail-row b{font-size:12px;font-weight:400}
+.detail-row p{font-size:12px;line-height:1.9;color:#82766d;margin:5px 0 0}
+.venue-photo{width:100%;aspect-ratio:1.65/1;object-fit:cover}
+h3{font-size:21px;font-weight:400;margin:42px 0 20px}
+.map-card{height:185px;position:relative;overflow:hidden;background:#e9e7e1;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:7px}
+.map-lines{position:absolute;inset:-30px;background:repeating-linear-gradient(32deg,transparent 0 34px,#fff 35px 40px,transparent 41px 75px),repeating-linear-gradient(120deg,transparent 0 55px,#d8d5cd 56px 59px,transparent 60px 95px);opacity:.85}
+.map-pin{position:relative;color:#d86e5b;font-size:32px;text-shadow:0 2px 3px #7775}
+.map-card strong{position:relative;font-size:12px;background:#ffffffb8;padding:5px 9px}
+.address{font-size:11px;color:#8e8279;margin:14px 0}
+.outline-button{display:inline-flex;align-items:center;gap:18px;border:1px solid #b9ada3;padding:12px 22px;font-size:11px;margin-top:6px}
+.accounts{background:#f6f0ea;padding-top:65px}
+.accounts .body-copy{margin-bottom:26px}
+.account{display:flex;align-items:center;justify-content:space-between;text-align:left;background:#fffaf6;padding:15px 13px;margin:9px auto;max-width:390px;gap:10px}
+.account div{display:grid;grid-template-columns:42px 1fr;gap:4px 8px;align-items:center}
+.account b,.account span{font-size:11px;font-weight:400}
+.account small{grid-column:2;font:10px Manrope,sans-serif;color:#8f8379}
+.copy-btn{border:1px solid #c6b9ae;background:transparent;padding:6px 10px;font-size:10px;cursor:pointer;color:#6e6259}
+.ending{background:#e9d9cd;text-align:center;padding:35px 22px 25px}
+.ending p{font-size:23px;line-height:1.6;margin:0 0 20px}
+.ending img{width:100%;height:240px;object-fit:cover;display:block}
+.ending small{display:block;font:9px Manrope,sans-serif;letter-spacing:1.5px;color:#8c7c70;padding-top:18px}
+.modal{position:fixed;inset:0;background:#1f1b19eF;display:none;align-items:center;justify-content:center;padding:22px;z-index:10}
+.modal.open{display:flex}
+.modal img{max-width:100%;max-height:85vh;object-fit:contain;box-shadow:0 10px 40px #0005}
+.modal-close{position:absolute;top:18px;right:20px;border:0;background:none;color:white;font-size:38px;cursor:pointer}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#4f4842;color:white;padding:12px 20px;border-radius:30px;font-size:12px;transition:.25s;z-index:20;white-space:nowrap}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(min-width:700px){body{padding:28px 0}.invitation{border-radius:14px}.hero-photo{height:440px}.section{padding-left:44px;padding-right:44px}}

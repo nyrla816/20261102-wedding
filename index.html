@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f1eb">
+  <meta name="description" content="소중한 날, 함께해 주세요.">
+  <title>우리의 결혼식에 초대합니다</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="invitation">
+    <!-- 첫 화면: 커플 이름과 대표 이미지 -->
+    <section class="hero" id="home">
+      <nav class="top-nav">
+        <a href="#home">HOME</a><a href="#story">STORY</a><a href="#gallery">GALLERY</a><a href="#location">LOCATION</a>
+      </nav>
+      <div class="hero-copy">
+        <p class="eyebrow">THE BEGINNING OF FOREVER</p>
+        <h1>밤 <span>♥</span> 만쥬</h1>
+        <p>서로의 오늘이 되어,<br>함께 더 빛날 내일을 약속합니다.</p>
+        <p class="date">2026. 11. 28 <span> SATURDAY · PM 1:00</span></p>
+      </div>
+      <img class="hero-photo" src="assets/hero-wedding.jpg" alt="햄스터 캐릭터 커플의 웨딩 일러스트">
+      <div class="hero-bottom">WITH LOVE, WE INVITE YOU</div>
+    </section>
+
+    <!-- 초대의 글과 두 사람의 이야기 -->
+    <section class="story section" id="story">
+      <p class="eyebrow">INVITATION</p>
+      <h2>소중한 분들을<br>모시고 싶습니다</h2>
+      <p class="body-copy">서로 다른 길을 걷던 두 사람이<br>이제 같은 방향을 바라보며 걸어갑니다.<br>저희의 새로운 시작을 축복해 주세요.</p>
+      <img class="flower" src="assets/flower.png" alt="" aria-hidden="true">
+      <div class="thin-line"></div>
+      <p class="eyebrow">OUR STORY</p>
+      <h2>함께라서 더 좋은<br>우리의 순간</h2>
+      <div class="story-grid">
+        <figure><img src="assets/gallery-02.jpg" alt="함께하는 소중한 순간"><figcaption>처음 만난 날</figcaption></figure>
+        <figure><img src="assets/gallery-04.jpg" alt="서로에게 기대는 순간"><figcaption>서로에게 익숙해진 날</figcaption></figure>
+      </div>
+      <p class="small-note">지금, 그리고 앞으로도<br>언제나 함께 걷겠습니다.</p>
+    </section>
+
+    <!-- 사진 갤러리: 이미지를 누르면 크게 볼 수 있습니다 -->
+    <section class="gallery section" id="gallery">
+      <p class="eyebrow">GALLERY</p>
+      <h2>우리의 순간들</h2>
+      <p class="body-copy">평범한 하루들이 모여<br>특별한 이야기가 되었습니다.</p>
+      <div class="gallery-grid">
+        <button class="gallery-item wide" data-full="assets/gallery-01.jpg" aria-label="사진 크게 보기"><img src="assets/gallery-01.jpg" alt="웨딩 캐릭터 일러스트"></button>
+        <button class="gallery-item" data-full="assets/gallery-02.jpg" aria-label="사진 크게 보기"><img src="assets/gallery-02.jpg" alt="웨딩 캐릭터 일러스트"></button>
+        <button class="gallery-item" data-full="assets/gallery-03.jpg" aria-label="사진 크게 보기"><img src="assets/gallery-03.jpg" alt="웨딩 캐릭터 일러스트"></button>
+        <button class="gallery-item" data-full="assets/gallery-04.jpg" aria-label="사진 크게 보기"><img src="assets/gallery-04.jpg" alt="웨딩 캐릭터 일러스트"></button>
+        <button class="gallery-item" data-full="assets/gallery-05.jpg" aria-label="사진 크게 보기"><img src="assets/gallery-05.jpg" alt="웨딩 캐릭터 일러스트"></button>
+      </div>
+      <p class="tap-hint">사진을 누르면 크게 볼 수 있어요</p>
+      <blockquote>“좋은 사람과 함께라면<br>어떤 하루도 빛날 거라는 걸<br>이제는 압니다.”</blockquote>
+    </section>
+
+    <!-- 예식 정보 -->
+    <section class="details section" id="location">
+      <p class="eyebrow">WEDDING DAY</p>
+      <h2>예식 안내</h2>
+      <div class="detail-card">
+        <div class="detail-row"><span class="detail-icon">▦</span><div><b>날짜</b><p>2026년 11월 28일 (토요일)<br>오후 1시 00분</p></div></div>
+        <div class="detail-row"><span class="detail-icon">⌖</span><div><b>예식장</b><p>그랜드웨딩홀 서울<br>서울특별시 강남구 테헤란로 000</p></div></div>
+      </div>
+      <img class="venue-photo" src="assets/gallery-03.jpg" alt="예식 분위기를 담은 웨딩 일러스트">
+      <h3>오시는 길</h3>
+      <div class="map-card">
+        <div class="map-lines"></div><span class="map-pin">●</span><strong>그랜드웨딩홀 서울</strong>
+      </div>
+      <p class="address">서울특별시 강남구 테헤란로 000</p>
+      <a class="outline-button" href="https://www.google.com/maps/search/?api=1&query=Grand+Wedding+Hall+Seoul" target="_blank" rel="noopener">구글 지도 앱으로 연결하기 <span>↗</span></a>
+    </section>
+
+    <!-- 마음 전하실 곳: 계좌번호는 예시 정보입니다 -->
+    <section class="accounts section">
+      <p class="eyebrow">WITH GRATITUDE</p>
+      <h2>마음 전하실 곳</h2>
+      <p class="body-copy">축하의 마음을 전해주시는 분들께<br>감사한 마음으로 간직하겠습니다.</p>
+      <div class="account">
+        <div><b>신랑</b><span>밤</span><small>국민은행 100-1234-567890</small></div>
+        <button class="copy-btn" data-copy="1001234567890">복사</button>
+      </div>
+      <div class="account">
+        <div><b>신부</b><span>만쥬</span><small>신한은행 100-9876-543210</small></div>
+        <button class="copy-btn" data-copy="1009876543210">복사</button>
+      </div>
+    </section>
+
+    <!-- 마지막 인사 -->
+    <footer class="ending">
+      <p>함께해 주셔서<br>감사합니다.</p>
+      <img src="assets/hero-wedding.jpg" alt="햄스터 캐릭터 커플의 마지막 인사">
+      <small>2026. 11. 28 · BAM & MANJU</small>
+    </footer>
+  </main>
+
+  <!-- 사진 확대 팝업 -->
+  <div class="modal" id="imageModal" aria-hidden="true">
+    <button class="modal-close" aria-label="닫기">×</button>
+    <img id="modalImage" src="" alt="확대된 웨딩 사진">
+  </div>
+  <!-- 복사 완료 팝업 -->
+  <div class="toast" id="toast" role="status" aria-live="polite">계좌번호가 복사되었습니다.</div>
+  <script src="script.js"></script>
+</body>
+</html>
